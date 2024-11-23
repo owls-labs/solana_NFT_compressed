@@ -61,7 +61,7 @@ let initBalance: number, balance: number;
   // generate a new Keypair for testing, named `wallet`
   const testWallet = loadOrGenerateKeypair("testWallet");
 
-  // generate a new keypair for use in this demo (or load it locally from the filesystem when available)
+  // generate a new keypair for use in this demo (or load it locally from the filesystem when available) or use windows.solana if you are using wallet 
   const payer = process.env?.LOCAL_PAYER_JSON_ABSPATH
     ? loadKeypairFromFile(process.env?.LOCAL_PAYER_JSON_ABSPATH)
     : loadOrGenerateKeypair("payer");
